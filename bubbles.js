@@ -157,8 +157,8 @@ function Point(x, y, z, size, color) {
 }
 
 var canvas = $("#myCanvas");
-var canvasHeight = 500;
-var canvasWidth = 2000;
+var canvasHeight = 1500;
+var canvasWidth = 2500;
 var screenWidth = canvasWidth;
 var ctx;
 var dt = 0.1;
@@ -221,7 +221,7 @@ function initEventListeners() {
 }
 
 function updateCanvasDimensions() {
-	canvas.attr({height: 500, width: 2000});
+	canvas.attr({height: 500, width: 1300});
 	canvasWidth = canvas.width();
 	canvasHeight = canvas.height();
 
@@ -313,13 +313,11 @@ function drawName(name, letterColors) {
     
     function addLetter(cc_hex, ix, letterCols) {
         if(typeof letterCols !== 'undefined') {
-            /* letterColors = [red, white, blue] */
-            if(Object.prototype.toString.call(letterCols) === '[object Array]' && Object.prototype.toString.call(letterCols[0]) === '[object Array]') {
-                letterColors = letterCols;
-            }
-            /* letterColors = red */
-            if(Object.prototype.toString.call(letterCols) === '[object Array]' && typeof letterCols[0] === "number") {
+            if(Object.prototype.toString.call(letterCols) === '[object Array]' && letterCols.length == 3) {
                 letterColors = [letterCols];
+            }
+            if(Object.prototype.toString.call(letterCols) === '[object Array]' && letterCols.length > 3) {
+                letterColors = letterCols;
             }
         }
         else {

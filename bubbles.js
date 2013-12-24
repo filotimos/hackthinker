@@ -158,7 +158,7 @@ function Point(x, y, z, size, color) {
 
 var canvas = $("#myCanvas");
 var canvasHeight = 500;
-var canvasWidth = 1500;
+var canvasWidth = 2000;
 var screenWidth = canvasWidth;
 var ctx;
 var dt = 0.1;
@@ -221,7 +221,7 @@ function initEventListeners() {
 }
 
 function updateCanvasDimensions() {
-	canvas.attr({height: 500, width: 1000});
+	canvas.attr({height: 500, width: 2000});
 	canvasWidth = canvas.width();
 	canvasHeight = canvas.height();
 

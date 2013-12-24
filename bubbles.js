@@ -158,7 +158,7 @@ function Point(x, y, z, size, color) {
 
 var canvas = $("#myCanvas");
 var canvasHeight = 500;
-var canvasWidth = 1000;
+var canvasWidth = 1500;
 var screenWidth = canvasWidth;
 var ctx;
 var dt = 0.1;

@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  text-align: center;  
+}
+
+
+section {
+    margin: auto;
+    width: 100%;
+    height: 800px;
+    color: white;
+    font-family: 'Open Sans';
+    position: relative;
+}
+
+P{
+    color: green;
+    font-size: 50px;
+    font-family: monospace; 
+}
+
+iframe {
+    margin:100px 10px  ;
+    top: 200px;
+    position: fixed;
+}
+
+#madeby{
+   font-size: 12px;
+   bottom: 1px; 
+   float: right;
+}
